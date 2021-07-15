@@ -17,4 +17,4 @@ My first milestone was getting the car to be able to move. This involved learnin
 [![Milestone #1](https://res.cloudinary.com/marcomontalbano/image/upload/v1626378643/video_to_markdown/images/youtube--YWbhqKimJSA-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=YWbhqKimJSA "Milestone #1")
 Schematics:
 ![ESP32-L298N-Motor(4)-Schematics](https://user-images.githubusercontent.com/87206873/125861398-ce9c9933-9027-46c3-ac5f-727f8acb9a88.jpg)
-![Car Milestone #1 Picture](https://drive.google.com/file/d/1Y7ktGVeqb-VRuIK4rrME0n3izha00wVF/view?usp=sharing)
+![Car Milestone #1 Picture](![Gesture Controlled Car Milestone #1](https://user-images.githubusercontent.com/87206873/125862108-9747a757-2350-45e2-a597-5f9d5013f07b.jpg))
