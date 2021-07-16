@@ -19,7 +19,7 @@ Schematics:
 ![ESP32-L298N-Motor(4)-Schematics](https://user-images.githubusercontent.com/87206873/125861398-ce9c9933-9027-46c3-ac5f-727f8acb9a88.jpg)
 ![Car Milestone #1 Picture](https://user-images.githubusercontent.com/87206873/125862108-9747a757-2350-45e2-a597-5f9d5013f07b.jpg)
 My Code:
-```Arduino int motor1Pin1 = 27;
+```C++ int motor1Pin1 = 27;
 int motor1Pin2 = 26;
 int enable1Pin = 14;
 int motor2Pin1 = 25;
