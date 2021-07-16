@@ -97,7 +97,6 @@ digitalWrite(motor2Pin2,HIGH);
    Serial.println(i);
    ledcWrite(0,i);
    ledcWrite(1,i);
-   //ledcWrite(green,255 - i);
    delay(25);
    }
 
