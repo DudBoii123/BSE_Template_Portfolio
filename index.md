@@ -20,7 +20,8 @@ Schematics:
 ![Car Milestone #1 Picture](https://user-images.githubusercontent.com/87206873/125862108-9747a757-2350-45e2-a597-5f9d5013f07b.jpg)
 My Code:
 
-```Arduino //Define the GPIO pins the motor input and enable pins are connected to
+```Arduino 
+//Define the GPIO pins the motor input and enable pins are connected to
 int motor1Pin1 = 27;
 int motor1Pin2 = 26;
 int enable1Pin = 14;
