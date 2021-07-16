@@ -36,17 +36,18 @@ const byte resolution = 8;
 int dutyCycle = 200;
 
 void setup() {
-//Set ESP32 pins connected to motor pins as outputs
+//Set pins as outputs
 pinMode(motor1Pin1,OUTPUT);
 pinMode(motor1Pin2,OUTPUT);
 pinMode(enable1Pin,OUTPUT);
 pinMode(motor2Pin1,OUTPUT);
 pinMode(motor2Pin2,OUTPUT);
 pinMode(enable2Pin,OUTPUT);
-//Configure pwm signals and choose which GPIO the signal comes from
+//Configure pwm functionalities
 ledcSetup(pwmChannel1,freq,resolution);
-ledcAttachPin(enable1Pin,pwmChannel1);
 ledcSetup(pwmChannel2,freq,resolution);
+//attachh the pwm channel to the GPIO to be controlled
+ledcAttachPin(enable1Pin,pwmChannel1);
 ledcAttachPin(enable2Pin,pwmChannel2);
 //Set up serial monitor
 Serial.begin(9600);
