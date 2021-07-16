@@ -18,3 +18,87 @@ My first milestone was getting the car to be able to move. This involved learnin
 Schematics:
 ![ESP32-L298N-Motor(4)-Schematics](https://user-images.githubusercontent.com/87206873/125861398-ce9c9933-9027-46c3-ac5f-727f8acb9a88.jpg)
 ![Car Milestone #1 Picture](https://user-images.githubusercontent.com/87206873/125862108-9747a757-2350-45e2-a597-5f9d5013f07b.jpg)
+My Code:
+'''Arduino int motor1Pin1 = 27;
+int motor1Pin2 = 26;
+int enable1Pin = 14;
+int motor2Pin1 = 25;
+int motor2Pin2 = 33;
+int enable2Pin = 32;
+const byte pwmChannel1 = 0;
+const byte pwmChannel2 = 1;
+const byte freq = 30000;
+const byte resolution = 8;
+int dutyCycle = 200;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(motor1Pin1,OUTPUT);
+pinMode(motor1Pin2,OUTPUT);
+pinMode(enable1Pin,OUTPUT);
+pinMode(motor2Pin1,OUTPUT);
+pinMode(motor2Pin2,OUTPUT);
+pinMode(enable2Pin,OUTPUT);
+ledcSetup(pwmChannel1,freq,resolution);
+ledcAttachPin(enable1Pin,pwmChannel1);
+ledcSetup(pwmChannel2,freq,resolution);
+ledcAttachPin(enable2Pin,pwmChannel2);
+Serial.begin(9600);
+Serial.print("Motor Test Beginning...");
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+Serial.print("Motor Test Beginning...");
+delay(200);
+Serial.print("Attempting Motor 1 Full Speed Backward Rotation...");
+delay(100);
+digitalWrite(motor1Pin1,HIGH);
+digitalWrite(motor1Pin2,LOW);
+digitalWrite(motor2Pin1,HIGH);
+digitalWrite(motor2Pin2,LOW);
+delay(2000);
+
+Serial.print("Motor Stopped");
+digitalWrite(motor1Pin1,LOW);
+digitalWrite(motor1Pin2,LOW);
+digitalWrite(motor2Pin1,LOW);
+digitalWrite(motor2Pin2,LOW);
+delay(2000);
+
+Serial.print("Attempting Motor 1 Full Speed Forward Rotation...");
+delay(100);
+digitalWrite(motor1Pin1,LOW);
+digitalWrite(motor1Pin2,HIGH);
+digitalWrite(motor2Pin1,LOW);
+digitalWrite(motor2Pin2,HIGH);
+delay(2000);
+
+Serial.print("Motor Stopped");
+digitalWrite(motor1Pin1,LOW);
+digitalWrite(motor1Pin2,LOW);
+digitalWrite(motor2Pin1,LOW);
+digitalWrite(motor2Pin2,LOW);
+delay(2000);
+
+Serial.print("Attempting Motor 1 Forward Speed Up...");
+digitalWrite(motor1Pin1,LOW);
+digitalWrite(motor1Pin2,HIGH);
+digitalWrite(motor2Pin1,LOW);
+digitalWrite(motor2Pin2,HIGH);
+ for (int i = 0; i < 256; i++) {
+   Serial.println(i);
+   ledcWrite(0,i);
+   ledcWrite(1,i);
+   //ledcWrite(green,255 - i);
+   delay(25);
+   }
+
+Serial.print("Motor Stopped");
+digitalWrite(motor1Pin1,LOW);
+digitalWrite(motor1Pin2,LOW);
+digitalWrite(motor2Pin1,LOW);
+digitalWrite(motor2Pin2,LOW);
+delay(2000);
+}
+'''
