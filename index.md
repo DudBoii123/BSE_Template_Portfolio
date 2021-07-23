@@ -12,6 +12,7 @@ In the end, I really enjoyed working on this project, and it made me realize how
 # Final Milestone
 This is my third and final milestone, which was finishing my project by adding code for the motors into the code for the car ESP32, and attatching the glove ESP and the accelerometer to the glove. This seems simple enough, as it is mostly just copying and pasting certain parts of my milestone 1 code to the milestone 2 code for the receiving ESP, I did have a bug that took a pretty long time to solve. For some reason, the milestone 1 code was working, but as soon as we transferred it into the final code, it stopped working. After spending a lot of time troubleshooting, we found out that in one of the lines where the duty cycle should be written, I wrote HIGH, thinking that HIGH meant the high end of the range the duty cycle could be, which is 0 to 255, while HIGH actually meant 1. The materials I used for this milestone was just the glove to attach the ESP32 and the gyro/accelerometer to, as this milestone was both short, and mostly involved coding.
 [![Milestone #3](https://res.cloudinary.com/marcomontalbano/image/upload/v1627078280/video_to_markdown/images/youtube--6c_49KldnY4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=6c_49KldnY4 "Milestone #3")
+![IMG_0143](https://user-images.githubusercontent.com/87206873/126847957-ac062664-e2a3-4d18-9e05-63583a8161f4.jpg)
 Receiving ESP (Car) updated if statements:
 
 ```c++
