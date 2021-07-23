@@ -214,7 +214,7 @@ digitalWrite(motor2Pin1,LOW);
 digitalWrite(motor2Pin2,LOW);
 delay(2000);
 }                      
-```
+\```
 
 </p>
 </details>  
