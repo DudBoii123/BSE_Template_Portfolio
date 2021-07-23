@@ -123,7 +123,7 @@ delay(2000);
 <summary>I could use some help...</summary>
 <p>
 
-```C++
+```c++
 //Define the GPIO pins the motor input and enable pins are connected to
 int motor1Pin1 = 27;
 int motor1Pin2 = 26;
