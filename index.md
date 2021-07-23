@@ -23,7 +23,8 @@ My Code:
 <details>
   <summary>Click to expand!</summary>
   
- ```C++
+ ```
+ C++
 //Define the GPIO pins the motor input and enable pins are connected to
 int motor1Pin1 = 27;
 int motor1Pin2 = 26;
@@ -114,6 +115,7 @@ digitalWrite(motor2Pin1,LOW);
 digitalWrite(motor2Pin2,LOW);
 delay(2000);
 }
+                         
 ```
                          
 </details>
